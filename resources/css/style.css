@@ -1,0 +1,491 @@
+/* Settings Iniziali */
+:root {
+    --main-color: #738067;
+   
+    --secondary-color: #5b7f37;
+    --third-color: #F2F2F0;
+    --fourth-color: #695F6A;
+    --fifth-color: #37402F;
+    --sixth-color: #B56BBF;
+    --blackCus: #242424e0;
+}
+
+.text-mainCus {
+    color: var(--main-color);
+}
+
+.text-secondaryCus {
+    color: var(--secondary-color);
+}
+
+.text-accent {
+    color: var(--sixth-color);
+}
+
+.text-blackCus {
+    color: var(--blackCus);
+}
+
+.text-fourthCus {
+    color: var(--third-color);
+}
+
+/* bg-Custom */
+
+.bg-primaryCus {
+    background-color: var(--main-color);
+}
+
+.bg-secondaryCus {
+    background-color: var(--secondary-color);
+}
+
+.bg-accent {
+    background-color: var(--third-color);
+}
+
+.bg-fourthCus {
+    background-color: var(--fourth-color);
+}
+.bg-fifthCus {
+    background-color: var(--fifth-color);
+}
+.bg-sixthCus {
+    background-color: var(--sixth-color);
+}
+.bg-blackCus {
+    background-color: var(--blackCus);
+}
+
+
+
+@font-face {
+    font-family: design;
+    src: url('/public/media/Comodo\ Regular\ Free.otf');
+}
+
+@font-face {
+    font-family: moderna;
+    src: url('/public/media/Quenda-Medium.otf');
+}
+/* Fine settings iniziali */
+
+/* Settings Header */
+
+
+.bodyCus{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.150), rgba(0, 0, 0, 0.150)), url('/public/media/body15.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    /* min-height: 100vh; */
+    width: 100%;   
+}
+
+
+.iCus{
+    color: var(--third-color);
+}       
+
+
+label{
+    font-family: moderna;
+    font-size: 30px;
+    text-align: center;
+    color: var(--blackCus);
+}
+
+.pFooter{
+    font-family: design;
+    font-size: 40px;
+    text-align: center;
+    color: var(--fifth-color);
+    
+}
+
+.labelFooter{
+    font-family: moderna;
+    font-size: 25px;
+    text-align: center;
+    color: var(--blackCus);
+    
+}
+
+.strongCus{
+    font-family: moderna;
+    font-size: 20px;  
+    text-align: center;
+    color: var(--blackCus);
+    
+    
+}
+
+.creaAnnuncioCus{
+    font-family: design;
+    font-size: 120px;
+    text-align: center;
+    color: var(--fifth-color);
+    text-shadow: var(--secondary-color) 4px 4px 4px;
+    
+    
+}
+@media screen and (max-width: 500px){
+    .creaAnnuncioCus{
+        font-size: 60px;
+        
+    }
+    
+}
+
+.accediCus{
+    font-family: design;
+    font-size: 120px;
+    text-align: center;
+    color: var(--fifth-color);
+    text-shadow: var(--secondary-color) 4px 4px 4px;
+}
+
+@media screen and (max-width: 500px){
+    .accediCus{
+        font-size: 60px;
+        
+    }
+    
+}
+
+h1{
+    
+    font-family: design;
+    font-size: 100px;
+    text-align:start;
+    color: var(--fifth-color);
+    text-shadow: var(--secondary-color) 4px 4px 4px;
+    margin-top: 200px;
+    z-index: -1;
+    
+}
+
+@media screen and (max-width: 500px){
+    h1{
+        font-size: 60px;
+        margin-top: 390px;
+       
+    }
+    .ul-mobile{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+/* Fine settings header */
+
+/* settaggi bottoni e hover */
+.btnCus{
+    font-family: moderna;
+    font-size: 25px;
+    text-align: center;
+    color: var(--third-color);
+    background-color: var(--secondary-color);
+    border: 3px solid var(--fourth-color);
+    border-radius: 10px;
+    
+    margin-bottom: 20px;
+    
+    width: 150px;
+    height: 50px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    
+}
+
+
+.btnCus:hover{
+    background-color: var(--sixth-color);
+    color: var(--third-color);
+    border: 3px solid var(--blackCus);
+    transform: scale(1.1);
+}
+
+.btnCusNav:hover{
+    background-color: var(--sixth-color);
+    color: var(--third-color);
+    border: 3px solid var(--blackCus);
+    transform: scale(1.1);
+}
+
+
+
+.btnCusCard:hover{
+    background-color: var(--main-color);
+    color: var(--third-color);
+    border: 3px solid var(--blackCus);  
+    transform: scale(1.1);
+}
+/* fine settaggi bottoni e hover */
+
+/* glassmorphism */
+.createCus{
+    background: rgba(255, 255, 255, 0.350);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.0px);
+    -webkit-backdrop-filter: blur(5.0px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.registerCus{
+    background: rgba(255, 255, 255, 0.350);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.0px);
+    -webkit-backdrop-filter: blur(5.0px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.loginCus{
+    background: rgba(255, 255, 255, 0.350);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.0px);
+    -webkit-backdrop-filter: blur(5.0px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+/* fine glassmorphism */
+
+li{
+    font-family: moderna;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.aCus{
+    font-family: moderna;
+    font-size: 18px;
+    text-align: center;
+    color: var(--third-color) !important;
+    text-decoration: none;
+    
+}
+/* Setting Inizio Navbar */
+
+.myLogo{
+    width: 85px;
+    height: 52px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--third-color);
+}
+
+.navbar-custom{
+    
+    height: 70px;
+    background-color: var(--fifth-color)
+}
+
+
+input::placeholder{
+    color: var(--main-color);
+    
+}
+
+@media screen and (max-height: 900px){
+    
+        
+        
+    }
+
+
+/* Settings fine navbar */
+
+
+/* Sezione cards */
+
+/* Span  */
+.span-custom{
+    font-family: moderna;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 15px;
+    padding-bottom: 8px;
+    font-size: 30px;
+    
+    
+}
+
+
+.btnCusCard{
+    font-family: moderna;
+    font-size: 15px;
+    text-align: center;
+    color: var(--blackCus);
+    background-color: var(--secondary-color);
+    border: 1px solid var(--blackCus);
+    border-radius: 5px;
+    
+    width: 117px;
+    height: 50px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+
+
+.titleCus{
+    font-family:moderna;
+    
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--blackCus);
+    
+}
+
+.titleCus2{
+    font-family:moderna;
+    font-size: 25px;
+    font-weight: lighter;
+    text-align: center;
+    color: var(--blackCus);
+    
+}
+/* sezione swiper */
+
+
+
+.swiper {
+    width: 100%;
+    height: 200px;
+}
+
+/* .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    min-height: ;
+} */
+/* fine swiper */
+
+
+/* Card Styles */
+
+.card-sl {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 300px;
+    min-height: 450px;
+}
+
+.card-image img {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 8px 8px 0px 0;
+}
+
+
+.input-navbar{
+    font-family: quesha;
+    border: 5px solid var(--fourth-color);
+}
+
+.card-action:hover {
+    color: #fff;
+    background: #E26D5C;
+    
+}
+
+.card-heading {
+    font-size: 15px;
+    font-weight: bold;
+    background: #fff;
+    padding: 10px 15px;
+}
+
+.card-text {
+    padding: 10px 15px;
+    background: #fff;
+    font-size: 17px;
+    color: #636262;
+}
+
+.card-button {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #1F487E;
+    color: #fff;
+    border-radius: 0 0 8px 8px;
+}
+
+.card-button:hover {
+    text-decoration: none;
+    background-color: #1D3461;
+    color: #fff;
+    
+}
+
+.imgaltezza-custom{
+    height: 100px;
+    
+}
+
+/* .img-swiper-custom{
+    height:297px;
+} */
+
+
+.marginCusRevImg{
+    
+    font-family: moderna;
+    margin-bottom: 20px;
+    
+    
+    
+} 
+.border-Custom{
+    border: 2px solid var(--blackCus);
+    border-radius: 10px;
+    box-shadow: #242424 10px 10px 10px;
+    width: 300px;
+    height: 300px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pCustom{
+    font-family: moderna;
+    font-size: 30px;
+    text-align: center;
+    color: var(--blackCus);
+    
+}
+
+.header-altezza{
+    height: 50vh;
+}
+
+.color-span{
+    color: var(--third-color);
+}
+
+.borderIcon{
+    border: 1px solid var(--third-color);
+}
+.borderIcon:active{
+    color: var(--third-color);
+}
